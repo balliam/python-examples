@@ -1,2 +1,15 @@
+a = int(input("Enter your first number: "))
+b = int(input("Enter your second number: "))
+c = input("Choose your operation (+, -, /, *): ")
 
-print("Making sure git is working fine")
+if c == "+":
+    print(a + b)
+elif c == "-":
+    print(a - b)
+elif c == "/":
+    print(a / b)
+elif c == "*":
+    print(a * b)
+else:
+    print("Invalid operator")
+
