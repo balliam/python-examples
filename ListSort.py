@@ -1,10 +1,14 @@
-print("Print 10 numbers and press enter. Once done press q to exit: ")
+n = int(input("Length of list:"))
+up_down = input("Order numbers up or down:")
 list1 = []
-
-while True:
-    data = input()
-    if str.lower(data) == "q":
-        break
-    list1.append(data)
-
-print(list1.sort())
+if up_down == "up":
+    for i in range(n):
+        data = int(input("Enter numbers:"))
+        list1.append(data)
+        list1.sort()
+elif up_down == "down":
+    for i in range(n):
+        data = int(input("Enter numbers:"))
+        list1.append(data)
+        list1.sort(reverse=True)
+print(list1)

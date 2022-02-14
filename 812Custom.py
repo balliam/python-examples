@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = "OTQyMDU2MzU0MjI5NjgyMjQ2.Yge8WQ.H1M3l4JxVgOtjn0smfKeTBb4rYY"
+TOKEN = "OTQyMDU2MzU0MjI5NjgyMjQ2.Yge8WQ.CSLlDHu08m3D5bYfyxASxSzq8cg"
 bot = discord.Client()
 
 wait_list = []
@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix="?", intents=intents)
 @bot.command(name='qlist')
 async def qlist(ctx):
     queue_list = str(ctx.author).split("#")[0]
-    await ctx.send(queue_lis
+    await ctx.send(queue_list)
 
 @bot.command(name='queue')
 async def queue(ctx):
